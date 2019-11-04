@@ -4,8 +4,16 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Hexo">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="Hexo">
+    <meta name="description" content="@TOC
+Axure1.axure基本用法
+尽量用英文版的Axure
+简单原件的使用
+
+元件 在axure中就是page
+box         盒子【块元素】（div）
+有如下属性：
+    width     宽度           ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +21,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello World | Hexo</title>
+    <title>Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -260,13 +268,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Hello World
+                        
                     </div>
                 </div>
             </div>
@@ -388,7 +396,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-07-28
+                    2019-11-05
                 </div>
 
                 
@@ -404,19 +412,58 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+                <p>@<a href="Axure的使用">TOC</a></p>
+<h1 id="Axure"><a href="#Axure" class="headerlink" title="Axure"></a>Axure</h1><h2 id="1-axure基本用法"><a href="#1-axure基本用法" class="headerlink" title="1.axure基本用法"></a>1.axure基本用法</h2><ul>
+<li>尽量用英文版的Axure</li>
+<li>简单原件的使用</li>
+</ul>
+<pre><code>元件 在axure中就是page
+box         盒子【块元素】（div）
+有如下属性：
+    width     宽度            
+    height        高度    
+    background   背景
+    padding        内边距
+    margin            外边距    
+    border            边框
+        border-width      边框宽度
+        border-style            边框样式
+        border-color        边框颜色
+        border-radius        边框角度</code></pre><ul>
+<li><p>元件–&gt;image、video、表单元件</p>
+<pre><code>image、video是插入图片和视频，使用时只需要添加所需图片和视频地址即可
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+表单元件包括一些复选框Checkbox，单选框radio Button等等以及input
+的函数操作可以用来进行交互.</code></pre></li>
+<li><p>页面布局<br>Axure通过把Box作为容器,然后添加一些页面所需要的元件例如table、span来布局.</p>
+<pre><code>布局流程：
+   从上往下，从外往内
+   行级布局
+   列级布局</code></pre></li>
+</ul>
+<h2 id="稍微深层次用法"><a href="#稍微深层次用法" class="headerlink" title="稍微深层次用法"></a>稍微深层次用法</h2><ul>
+<li><p>内置元件</p>
+<pre><code>基础元件（box,段落,标题…）
+高级元件（内联框架,中继器）
+    中继器使用：数据插入-&gt;驱动-&gt;页面（模板）每一个中继器复制增加两行
+表单元件（单行、多行文本框,单选按钮,复选框,下拉菜单）
+表格与菜单（table）
+图标(icons)需要用到图标就在icons中选取，没有的可以在阿里云图库中选取，只不过需要插入一些阿里云拓展插件.</code></pre></li>
+<li><p>事件机制</p>
+<pre><code>事件源-&gt;元素
+事件处理函数：
+    事件处理函数包括显示隐藏，行列的添加删除，页面的跳转等等用来对动态框，模态框，表格的增删改查等一系列的操作.
+ 事件对象</code></pre></li>
+<li><p>第三方元件库</p>
+<p> 如果在Axure找不到的元件需要插入第三方元件库.</p>
+</li>
+</ul>
+<h2 id="利用svn来团队构造Axure项目"><a href="#利用svn来团队构造Axure项目" class="headerlink" title="利用svn来团队构造Axure项目"></a>利用svn来团队构造Axure项目</h2><ul>
+<li><p>Svn原理</p>
+<pre><code>服务器端 服务器地址 subversion
+客户端 Axure中team分享项目到服务器端中的subversion里的仓库中，地址为svn://xx.xx.xx.xx/xxxx/xxxx/xx
+版本控制 checkout 修改的时候，操作. checkin 修改完毕，操作 team-&gt;gel all changes…</code></pre></li>
+</ul>
 
             </div>
             <hr/>
@@ -575,9 +622,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《Hello World》
+                    《》
                 </span> by
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/28/hello-world/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/11/05/Axure的基本用法/" property="cc:attributionName"
                rel="cc:attributionURL">
                 John Doe
             </a> is licensed under a
@@ -617,29 +664,38 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2019/07/28/蒋俊你是狗吧/">
+                <a href="/2019/11/05/Axure的基本用法/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="蒋俊你是狗吧">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">蒋俊你是狗吧</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            哈麻批
+                            @TOC
+Axure1.axure基本用法
+尽量用英文版的Axure
+简单原件的使用
+
+元件 在axure中就是page
+box         盒子【块元素】（div）
+有如下属性：
+    width     宽度           
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -648,6 +704,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -655,22 +712,25 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="fa fa-dot-circle-o"></i>
+                Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/07/28/hello-world/">
+                <a href="/2019/07/28/标题名/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="标题名">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">标题名</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            第一节标题内容
+
+第二标题内容
+
                         
                     </div>
                     <div class="publish-info">
@@ -685,7 +745,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
